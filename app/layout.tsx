@@ -11,19 +11,14 @@ export const metadata: Metadata = {
   },
   description: "Compress and convert JPG, PNG, WebP and GIF images directly in your browser. Free, private and easy to use.",
   keywords: ["image compressor","compress images","JPG compressor","PNG compressor","WebP compressor","image tools"],
-  icons: { icon: "/favicon.svg", apple: "/favicon.svg" },
+  icons: {
+    icon: [{ url: "/favicon.svg" }],
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Pic Compressor — Free Online Image Tools",
     description: "Fast browser-based image compression and conversion tools.",
     type: "website",
-  },
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-      },
-    ],
-    apple: "/favicon.svg",
   },
   verification: {
     google: "nScZP2sBUKhxwKfvtKwCxQkPMCIOOvYNT35E5W2pDn8",
