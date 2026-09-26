@@ -3,8 +3,10 @@ import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pic-compressor.github.io"),
+  metadataBase: new URL(`https://pic-compressor.github.io${basePath}`),
   title: {
     default: "Pic Compressor — Free Online Image Tools",
     template: "%s | Pic Compressor",
@@ -12,8 +14,8 @@ export const metadata: Metadata = {
   description: "Compress and convert JPG, PNG, WebP and GIF images directly in your browser. Free, private and easy to use.",
   keywords: ["image compressor","compress images","JPG compressor","PNG compressor","WebP compressor","image tools"],
   icons: {
-    icon: [{ url: "/favicon.svg" }],
-    apple: "/favicon.svg",
+    icon: `${basePath}/favicon.svg`,
+    apple: `${basePath}/favicon.svg`,
   },
   openGraph: {
     title: "Pic Compressor — Free Online Image Tools",
