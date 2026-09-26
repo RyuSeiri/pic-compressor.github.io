@@ -17,6 +17,17 @@ export const metadata: Metadata = {
     description: "Fast browser-based image compression and conversion tools.",
     type: "website",
   },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+      },
+    ],
+    apple: "/favicon.svg",
+  },
+  verification: {
+    google: "nScZP2sBUKhxwKfvtKwCxQkPMCIOOvYNT35E5W2pDn8",
+  },
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
