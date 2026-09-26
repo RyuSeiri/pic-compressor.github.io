@@ -1,2 +1,9 @@
 import Link from "next/link";
-export default function Header(){return <header className="site-header"><div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6"><Link href="/" className="brand"><img src="/favicon.svg" alt="" className="brand-mark"/><span>Pic Compressor</span></Link><nav className="hidden items-center gap-1 sm:flex"><Link href="/" className="nav-link">Compressor</Link><Link href="/privacy" className="nav-link">Privacy</Link><Link href="/terms" className="nav-link">Terms</Link></nav><Link href="/" className="mobile-home sm:hidden">Tools</Link></div></header>}
+
+export default function Header() {
+  return <header className="site-header"><div className="page-container header-inner">
+    <Link href="/" className="brand"><img src="/favicon.svg" alt="" className="brand-mark"/><span>Pic Compressor</span></Link>
+    <nav className="nav-links"><Link href="/#compressor" className="nav-link">Compressor</Link><Link href="/privacy" className="nav-link">Privacy</Link><Link href="/terms" className="nav-link">Terms</Link><Link href="/policy" className="nav-link">About</Link></nav>
+    <Link href="/#compressor" className="header-cta">Start compressing</Link>
+  </div></header>;
+}
